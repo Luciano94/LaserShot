@@ -4,3 +4,13 @@ LaserShot/UnityPackageManager/
 LaserShot/Temp/
 
 LaserShot/Library/
+
+LaserShot/\.vs/
+
+LaserShot/obj/
+
+LaserShot/Assembly-CSharp-Editor\.csproj
+
+LaserShot/Assembly-CSharp\.csproj
+
+LaserShot/BulletHell\.sln
