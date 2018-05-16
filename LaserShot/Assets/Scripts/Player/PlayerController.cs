@@ -7,11 +7,6 @@ public class PlayerController : MonoBehaviour {
 	[SerializeField] private float speed;
 	[SerializeField] private float tilt;
 
-	void Awake()
-	{
-		gameObject.GetComponent<LifeP>().Amount = 3;
-	}
-
 	void Update(){
 
 		float moveHorizontal = speed * Input.GetAxis("Horizontal");

@@ -29,22 +29,22 @@ public class BossMovement : MonoBehaviour {
 		}
 		/*fases*/
 		if (gameObject.GetComponent<Life>().Amount < 80){
-			potencia = 1.5f;
-			turrent1.GetComponent<EnemyShoot>().FireRate = 0.5f;
-			turrent2.GetComponent<EnemyShoot>().FireRate = 0.5f;
-			turrent3.GetComponent<EnemyShoot>().FireRate = 0.5f;
-		}
-		if (gameObject.GetComponent<Life>().Amount < 50){
-			potencia = 2;
+			potencia = 2f;
 			turrent1.GetComponent<EnemyShoot>().FireRate = 0.25f;
 			turrent2.GetComponent<EnemyShoot>().FireRate = 0.25f;
 			turrent3.GetComponent<EnemyShoot>().FireRate = 0.25f;
 		}
-		if (gameObject.GetComponent<Life>().Amount < 30){
+		if (gameObject.GetComponent<Life>().Amount < 50){
 			potencia = 3;
 			turrent1.GetComponent<EnemyShoot>().FireRate = 0.15f;
 			turrent2.GetComponent<EnemyShoot>().FireRate = 0.15f;
 			turrent3.GetComponent<EnemyShoot>().FireRate = 0.15f;
+		}
+		if (gameObject.GetComponent<Life>().Amount < 30){
+			potencia = 4;
+			turrent1.GetComponent<EnemyShoot>().FireRate = 0.10f;
+			turrent2.GetComponent<EnemyShoot>().FireRate = 0.10f;
+			turrent3.GetComponent<EnemyShoot>().FireRate = 0.10f;
 		}
 
 		/*movimiento*/

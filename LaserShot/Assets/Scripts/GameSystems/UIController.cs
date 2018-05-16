@@ -35,13 +35,16 @@ public class UIController : MonoBehaviour {
 			lives.text = "Health: " + GameController.Instance.PlayerLives.ToString();
 			if (GameController.Instance.BossFigth)
 			{
+				time.gameObject.SetActive(false);
 				bossHeal.gameObject.SetActive(true);
 				bossHeal.value = GameController.Instance.BossLife;
 			}
-			else bossHeal.gameObject.SetActive(false);
-			lives.gameObject.SetActive(true);
-			score.gameObject.SetActive(true);
-			time.gameObject.SetActive(true);
+			else{
+				bossHeal.gameObject.SetActive(false);
+				lives.gameObject.SetActive(true);
+				score.gameObject.SetActive(true);
+				time.gameObject.SetActive(true);
+			}
 		}
 	}
 }
